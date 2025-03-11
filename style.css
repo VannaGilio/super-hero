@@ -3,7 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+main{
+    background-color: #390000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body{
     background-color: #390000;
 }
@@ -20,6 +27,17 @@ header{
 h1{
     font-size: 3rem;
 }
+h2{
+    font-size: 3rem;
+
+}
+h3{
+    font-size: 2rem;
+    padding-bottom: 2rem
+}
+h4{
+    font-size: 1.5rem;
+}
 
 input{
     border-radius: 20px;
@@ -28,8 +46,12 @@ input{
     height: 2rem;
     background-color: #4A0A0A;
     border: 0;
-    color: #BB8989;
+    color: #BB8989; 
     font-size: large;
+}
+
+::-webkit-input-placeholder{
+    color: #BB8989;
 }
 
 button{
@@ -41,9 +63,27 @@ button{
     color: #4A0A0A;
     font-size: large;
     border: 0;
+    
 }
 
-.container{
-    width: 100%;
+#container{
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    width: 85%;
     background-color: #4A0A0A;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.89);
+}
+
+#introducao{
+    max-width: 50%;
+    padding: 30px;
+    color: white;
+}
+
+#img{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
 }
