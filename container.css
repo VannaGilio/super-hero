@@ -1,3 +1,40 @@
-.container{
-    padding-left: 5rem;
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo{
+    flex-direction: column;
+    gap: 15rem;
+    padding: 2rem;
+}
+
+#heroi{
+    padding-right: 2rem;
+}
+
+.info-heroi{
+    width: 100vh;
+    color: white;
+}
+
+.nome-heroi{
+    font-size: 4rem;
+    padding-bottom: 5rem;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: row;
+}
+
+.caracteristicas h3{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    border-bottom: solid #653C3C;
+}
+.caracteristicas h3:hover {
+    border-bottom-color:#A15858; 
+    cursor: pointer;
 }

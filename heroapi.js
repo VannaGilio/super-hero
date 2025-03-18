@@ -7,21 +7,37 @@ const pesquisarImagem = async (text) => {
     return response.json()
 }
 
-const createCard = ({image}) =>{
+const createCard = ({image, name, appearance}) =>{
     const card = document.createElement('div')
+    card.classList.add('section')
+    
     card.innerHTML = `
-        <img src= ${image.url}>
+    <div class="section">
+        <img id="heroi" src= ${image.url}>
+        <div class="info-heroi">
+            <div class="nome-heroi">
+                ${name}
+            </div>
+            <div class="caracteristicas">
+                <h3>POWERSTATS</h3>
+                <h3>BIOGRAPHY</h3>
+                <h3>APPEARANCE</h3>
+                <h3>CONNECTIONS</h3>
+                <h3>WORK</h3>
+            </div>
+        </div>
+    </div>
     `
     return card
 }
 
 //Trás as informações e criação do card
 const pesquisarHeroi = async (text) => {
-    const container = document.querySelector('.container')
+    const container = document.querySelector('.conteudo')
     const {results} = await pesquisarImagem(text)
     const cards = results.map(createCard)
     container.replaceChildren(...cards)
-    console.log(cards)
+    document.querySelector('#pesquisar-heroi').velue = text
 }
 
 // Ao presionar a tecla enter pegar o valor da função pesquisar
