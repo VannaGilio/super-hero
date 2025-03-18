@@ -7,9 +7,21 @@ const pesquisarImagem = async (text) => {
     return response.json()
 }
 
+const createCard = ({image}) =>{
+    const card = document.createElement('div')
+    card.innerHTML = `
+        <img src= ${image.url}>
+    `
+    return card
+}
+
+//Trás as informações e criação do card
 const pesquisarHeroi = async (text) => {
-    const imagemHeroi = await pesquisarImagem(text)
-    console.log(imagemHeroi)
+    const container = document.querySelector('.container')
+    const {results} = await pesquisarImagem(text)
+    const cards = results.map(createCard)
+    container.replaceChildren(...cards)
+    console.log(cards)
 }
 
 // Ao presionar a tecla enter pegar o valor da função pesquisar
@@ -18,3 +30,7 @@ const handleKeypress = ({key, target}) =>{
         pesquisarHeroi(target.value)
     }
 }
+
+// Tecla enter
+document.querySelector('#pesquisa-heroi')
+        .addEventListener('keypress', handleKeypress)

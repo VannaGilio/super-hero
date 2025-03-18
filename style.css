@@ -37,6 +37,7 @@ h3{
 }
 h4{
     font-size: 1.5rem;
+    font-weight: 100;
 }
 
 input{
@@ -86,7 +87,6 @@ button{
     justify-content: flex-end;
     height: 100%;
     width: 80%;
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 768px) {
@@ -136,6 +136,7 @@ button{
 
     h4 {
         font-size: 1rem;
+        font-weight: 50;
     }
 
     #img {
@@ -147,6 +148,4 @@ button{
         max-width: 100%;
         height: auto;
     }
-=======
->>>>>>> 9eeb6c3be5ff65c9898b5e2c62bf042bfa284076
 }
