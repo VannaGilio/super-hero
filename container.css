@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 
-.conteudo{
+.container{
     flex-direction: column;
     gap: 15rem;
     padding: 2rem;
@@ -37,4 +37,8 @@
 .caracteristicas h3:hover {
     border-bottom-color:#A15858; 
     cursor: pointer;
+}
+
+.lista-powerstats {
+    display: none; 
 }

@@ -39,7 +39,6 @@ h4{
     font-size: 1.5rem;
     font-weight: 100;
 }
-
 input{
     border-radius: 20px;
     width: 20rem;
@@ -54,19 +53,11 @@ input{
 ::-webkit-input-placeholder{
     color: #BB8989;
 }
-
-button{
-    width: 10rem;
-    height: 2rem;
-    border-radius: 20px;
-    /* padding: 10px; */
-    background-color: #BB8989;
-    color: #4A0A0A;
-    font-size: large;
-    border: 0;
     
+.container{
+    display: flex;
+    align-items: center;
 }
-
 #conteudo{
     display: flex;
     align-items: center;
@@ -95,19 +86,6 @@ button{
         text-align: center;
         padding: 15px;
     }
-
-    #pesquisa {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    input, button {
-        width: 90%;
-        padding: 12px;
-        font-size: 1rem;
-    }
-
     #conteudo {
         flex-direction: column;
         width: 90%;
