@@ -1,11 +1,15 @@
 .section{
     display: flex;
     justify-content: space-between;
+    height: auto;
+    background-color: #4A0A0A;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.89);
 }
 
 .container{
+    width: 100%;
     flex-direction: column;
-    gap: 15rem;
+    gap: 5rem;
     padding: 2rem;
 }
 
@@ -20,16 +24,30 @@
 
 .nome-heroi{
     font-size: 4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
 }
 
 .caracteristicas{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+a {
+    text-decoration: none; 
+    color: white; 
+}
+
+/* tirar tudo possivel do "a" */
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white; 
+    outline: none; 
 }
 
 .caracteristicas h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-bottom: 0.5rem;
     padding-right: 2rem;
     border-bottom: solid #653C3C;
@@ -41,4 +59,76 @@
 
 .lista-powerstats {
     display: none; 
+}
+.lista-biography {
+    display: none; 
+}
+.lista-appearance {
+    display: none; 
+}
+.lista-connections {
+    display: none; 
+}
+.lista-work {
+    display: none; 
+}
+
+li{
+    padding-top: 2.5rem;
+    padding-right: 1rem;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        gap: 2rem; 
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .nome-heroi {
+        font-size: 2.5rem;
+    }
+
+    .caracteristicas {
+        flex-direction: column;
+    }
+
+    .caracteristicas h3 {
+        font-size: 1.2rem;
+        padding-right: 0; 
+    }
+
+    #heroi {
+        padding-right: 0; 
+        width: 100%; 
+    }
+
+    .info-heroi {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nome-heroi {
+        font-size: 2rem; 
+    }
+
+    .caracteristicas h3 {
+        font-size: 1rem; 
+    }
+
+    .section {
+        padding: 1rem; 
+    }
+
+    .container {
+        gap: 1rem; 
+    }
 }
