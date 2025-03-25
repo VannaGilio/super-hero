@@ -7,7 +7,7 @@ const pesquisarImagem = async (text) => {
     return response.json()
 }
 
-const createCard = ({image, name, appearance, powerstats, biography, connections, work}) =>{
+const createCard = ({image, name, appearance, powerstats, biography, connections, work, publisher}) =>{
     const card = document.createElement('div')
     card.classList.add('section')
     
@@ -25,6 +25,7 @@ const createCard = ({image, name, appearance, powerstats, biography, connections
                 <h3><a href="#" class="click-appearance">APPEARANCE</a></h3>
                 <h3><a href="#" class="click-connections">CONNECTIONS</a></h3>
                 <h3><a href="#" class="click-work">WORK</a></h3>
+                <h3><a href="#" class="click-publisher">PUBLISHER</a></h3>
             </div>
 
             <div class="listas">
@@ -74,6 +75,12 @@ const createCard = ({image, name, appearance, powerstats, biography, connections
                         <li>BASE:   ${work.base}</li>
                     </ul>
                 </div>
+
+                <div class="lista">
+                    <ul class = "lista-publisher">
+                        <li>PUBLISHER:   ${biography.publisher}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -85,7 +92,16 @@ const createCard = ({image, name, appearance, powerstats, biography, connections
         listaAppearance.style.display = 'none'
         listaConnections.style.display = 'none'
         listaWork.style.display = 'none'
+        listaPublisher.style.display = 'none'
     }
+
+    const clickPublisher = card.querySelector('.click-publisher')
+    const listaPublisher = card.querySelector('.lista-publisher')
+    clickPublisher.addEventListener('click', (event) => { 
+        event.preventDefault()
+        esconderCaracteristicas()
+        listaPublisher.style.display = listaPublisher.style.display === 'none' ? 'block' : 'none' 
+    })
 
     //Clicar e aparecer as caractwristicas
     const clickPowerstats = card.querySelector('.click-powerstats')

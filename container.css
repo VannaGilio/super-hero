@@ -26,6 +26,9 @@
     font-size: 4rem;
     padding-bottom: 4rem;
     padding-top: 2rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .caracteristicas{
@@ -47,7 +50,7 @@ a:hover, a:focus, a:active {
 }
 
 .caracteristicas h3{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 0.5rem;
     padding-right: 2rem;
     border-bottom: solid #653C3C;
@@ -57,6 +60,9 @@ a:hover, a:focus, a:active {
     cursor: pointer;
 }
 
+.lista-publisher {
+    display: none; 
+}
 .lista-powerstats {
     display: none; 
 }
@@ -76,6 +82,9 @@ a:hover, a:focus, a:active {
 li{
     padding-top: 2.5rem;
     padding-right: 1rem;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 ul, li{

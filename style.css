@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -25,19 +29,31 @@ header{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;  
 }
 h2{
     font-size: 3rem;
-
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 h3{
     font-size: 2rem;
-    padding-bottom: 2rem
+    padding-bottom: 3rem ;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 h4{
     font-size: 1.5rem;
-    font-weight: 100;
+    padding-bottom: 2rem;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
 }
 input{
     border-radius: 20px;
